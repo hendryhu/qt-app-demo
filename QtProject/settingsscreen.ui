@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsScreen</class>
+ <widget class="QWidget" name="SettingsScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1118</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>311</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>111</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>19</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Options</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>141</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="stopinsulin">
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Stop Insulin Delivery</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="activity">
+       <property name="text">
+        <string>Activity</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mypump">
+       <property name="text">
+        <string>My Pump</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mycgm">
+       <property name="text">
+        <string>My CGM</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="history">
+       <property name="text">
+        <string>History</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>681</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="back_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>158</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back to options</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>621</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="MyPumpScreen" name="mypumpscreen"/>
+    <widget class="ActivityScreen" name="activityscreen"/>
+    <widget class="Profilescreen" name="profilescreen"/>
+    <widget class="ControlIqScreen" name="controliqscreen"/>
+    <widget class="cgmscreen" name="cgm"/>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyPumpScreen</class>
+   <extends>QWidget</extends>
+   <header>mypumpscreen.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ActivityScreen</class>
+   <extends>QWidget</extends>
+   <header>activityscreen.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Profilescreen</class>
+   <extends>QWidget</extends>
+   <header>profilescreen.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ControlIqScreen</class>
+   <extends>QWidget</extends>
+   <header>controliqscreen.h</header>
+  </customwidget>
+  <customwidget>
+   <class>cgmscreen</class>
+   <extends>QWidget</extends>
+   <header>cgmscreen.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

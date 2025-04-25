@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ActivityScreen</class>
+ <widget class="QWidget" name="ActivityScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Activity Profiles</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="margin">
+    <number>12</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="text">
+      <string>Activity Profiles</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="sleepGroup">
+         <property name="title">
+          <string>Sleep Mode Settings</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="sleepon">
+            <property name="text">
+             <string>Enable Sleep Mode</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="schedule1Frame">
+            <layout class="QVBoxLayout" name="schedule1Layout">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Sleep Schedule 1</string>
+               </property>
+               <property name="font">
+                <font>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="daysFrame1">
+               <layout class="QHBoxLayout" name="daysLayout1">
+                <property name="spacing">
+                 <number>8</number>
+                </property>
+                <item>
+                 <widget class="QCheckBox" name="mon1">
+                  <property name="text">
+                   <string>Mon</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="tue1">
+                  <property name="text">
+                   <string>Tue</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="wed1">
+                  <property name="text">
+                   <string>Wed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="thu1">
+                  <property name="text">
+                   <string>Thu</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="fri1">
+                  <property name="text">
+                   <string>Fri</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="sat1">
+                  <property name="text">
+                   <string>Sat</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="sun1">
+                  <property name="text">
+                   <string>Sun</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="timeLayout1">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Start:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTimeEdit" name="sleep1start"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>End:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTimeEdit" name="sleep1end"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addScheduleBtn">
+            <property name="text">
+             <string>Add Second Sleep Schedule</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="schedule2Frame">
+            <layout class="QVBoxLayout" name="schedule2Layout">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Sleep Schedule 2</string>
+               </property>
+               <property name="font">
+                <font>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="daysFrame2">
+               <layout class="QHBoxLayout" name="daysLayout2">
+                <property name="spacing">
+                 <number>8</number>
+                </property>
+                <item>
+                 <widget class="QCheckBox" name="mon2">
+                  <property name="text">
+                   <string>Mon</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="tue2">
+                  <property name="text">
+                   <string>Tue</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="wed2">
+                  <property name="text">
+                   <string>Wed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="thu2">
+                  <property name="text">
+                   <string>Thu</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="fri2">
+                  <property name="text">
+                   <string>Fri</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="sat2">
+                  <property name="text">
+                   <string>Sat</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="sun2">
+                  <property name="text">
+                   <string>Sun</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="timeLayout2">
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="text">
+                  <string>Start:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTimeEdit" name="sleep2start"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>End:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTimeEdit" name="sleep2end"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QPushButton" name="removeScheduleBtn">
+               <property name="text">
+                <string>Remove Second Sleep Schedule</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="tempRateGroup">
+         <property name="title">
+          <string>Temporary Rate Settings</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Temporary Basal Rate (%)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="tempratevalue">
+            <property name="minimum">
+             <number>0</number>
+            </property>
+            <property name="maximum">
+             <number>200</number>
+            </property>
+            <property name="value">
+             <number>100</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="exerciseGroup">
+         <property name="title">
+          <string>Exercise Mode Settings</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="exerciseon">
+            <property name="text">
+             <string>Enable Exercise Mode</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Exercise Duration (minutes)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="exerciseduration">
+              <property name="minimum">
+               <number>15</number>
+              </property>
+              <property name="maximum">
+               <number>240</number>
+              </property>
+              <property name="value">
+               <number>60</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="saveButton">
+         <property name="minimumHeight">
+          <number>40</number>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Save Profile Settings</string>
+         </property>
+         <property name="styleSheet">
+          <string>background-color: #4CAF50; color: white;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

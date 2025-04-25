@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BolusScreen</class>
+ <widget class="QWidget" name="BolusScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="grid">
+     <item row="0" column="1">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Bolus</string>
+       </property>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>691</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>40</y>
+            <width>431</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Carbs</string>
+          </property>
+          <widget class="QLineEdit" name="carb">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>70</y>
+             <width>371</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>281</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Desired Carb Amount (in g):</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>200</y>
+            <width>431</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Current Blood Glucose</string>
+          </property>
+          <widget class="QLineEdit" name="bloodGlucose">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>70</y>
+             <width>371</width>
+             <height>25</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>151</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Level in mmol/L:</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QPushButton" name="continue1">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>370</y>
+            <width>431</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Continue</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QWidget" name="gridLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>641</width>
+            <height>461</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <family>DejaVu Sans</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <italic>true</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Extend?</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="correctionValue">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="font">
+              <font>
+               <family>Liberation Mono</family>
+               <weight>75</weight>
+               <italic>true</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;-</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="extend">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="font">
+              <font>
+               <family>Liberation Mono</family>
+               <weight>75</weight>
+               <italic>true</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Continue</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <family>DejaVu Sans</family>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <italic>true</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Correction Bolus:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="font">
+              <font>
+               <family>DejaVu Sans</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <italic>true</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Food:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="foodValue">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>10</y>
+            <width>441</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Navigation:</string>
+          </property>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;-</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="totalDose">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>50</y>
+             <width>291</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>currentDose (TBR)</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>130</y>
+            <width>441</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="title">
+           <string>Delivery Settings:</string>
+          </property>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>131</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>DejaVu Sans</family>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Deliver Now: (%)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>50</y>
+             <width>131</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>DejaVu Sans</family>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Deliver Later: (%)</string>
+           </property>
+          </widget>
+          <widget class="QDial" name="duration">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>70</y>
+             <width>101</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>9</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>50</y>
+             <width>71</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>DejaVu Sans</family>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Duration:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="durationLabel">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>180</y>
+             <width>41</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>DejaVu Sans</family>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>1 hrs</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QDial" name="deliverNow">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>73</y>
+             <width>101</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>100</number>
+           </property>
+          </widget>
+          <widget class="QDial" name="deliverLater">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>70</y>
+             <width>101</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="deliverLaterLabel">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>180</y>
+             <width>41</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>DejaVu Sans</family>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>0%</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="deliverNowLabel">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>180</y>
+             <width>41</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>DejaVu Sans</family>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>100%</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>440</y>
+            <width>441</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Continue</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="deliveredNow">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>400</y>
+            <width>181</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="deliveredLater">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>400</y>
+            <width>191</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>380</y>
+            <width>171</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Deliver Now: (Units)</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>380</y>
+            <width>171</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Deliver Later: (Units)</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
