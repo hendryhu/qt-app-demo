@@ -1,3 +1,5 @@
+Note: This is a archived mirror of the original project repository.
+
 # COMP3004 Final Project
 
 This is the repository for our team's final project for COMP 3004, where we are building a simulation of the t:slim Insulin Pump in Qt.
